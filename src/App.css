@@ -1,0 +1,10 @@
+.contenedor-Tareas {
+  width: 480px;
+  min-height: 500px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+
+}

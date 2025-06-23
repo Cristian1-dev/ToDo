@@ -1,0 +1,10 @@
+button {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.botones {
+    display: inline-flex
+}
