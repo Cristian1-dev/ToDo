@@ -30,9 +30,50 @@ input {
   padding: 8px;
   font-size: 18px;
   display: flex;
-  flex-wrap: wrap;
 }
 button {
   height: 85%;
   width: 25%;
+}
+
+.lista {
+  width: 90%;
+  min-height: 300px;
+  display: inline;
+}
+
+.parrafo {
+  width: 75%;
+  min-height: 50px;
+  border: 2px solid black;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  
+  
+  
+}
+.botones {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 10px;
+  
+}
+.eliminar,.actualizar {
+  width: 30px;
+  height: 30px;
+}
+
+.tarea-contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+
 }
