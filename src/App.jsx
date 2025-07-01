@@ -11,8 +11,23 @@ export const App = () => {
     if (tareas.trim() !== '') {
       setlistaTareas([...listaTareas, tareas])
       setTareas('');
-    };
+    }else {
+      alert('Debe de ingresar una tarea')
+    }
   };
+const actualizarTarea = (index) => {
+  const nuevaTarea = prompt('Ingrese la tarea actualizada:');
+  if (nuevaTarea !== null && nuevaTarea.trim() !== '') {
+    const nuevaLista = [...listaTareas];
+    nuevaLista[index] = nuevaTarea;
+    setlistaTareas(nuevaLista);
+  }
+};
+
+  const eliminarTarea = (index) => {
+    const nuevaLista = listaTareas.filter((_, i) => i !== index);
+    setlistaTareas(nuevaLista);
+  }
 
   return (
     <div className='contenedor'>
@@ -26,14 +41,12 @@ export const App = () => {
           <div className='tarea-contenedor' key={index}>
             <div className='parrafo'>{tarea}</div>
             <div className='botones'>
-              <button className='eliminar'>E</button>
-              <button className='actualizar'>A</button>
+              <button onClick={() => eliminarTarea(index)} className='eliminar'>E</button>
+              <button onClick={() => actualizarTarea(index)} className='actualizar'>A</button>
             </div>
           </div>
         ))}
       </div>
-
-
     </div>
   )
 
