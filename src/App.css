@@ -1,4 +1,4 @@
-.contenedor-Tareas {
+.contenedor {
   width: 480px;
   min-height: 500px;
   border: 3px solid black;
@@ -7,4 +7,32 @@
   flex-direction: column;
   padding: 25px;
 
+}
+h1 {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.entrada {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+input {
+  height: 85%;
+  width: 70%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  height: 85%;
+  width: 25%;
 }
